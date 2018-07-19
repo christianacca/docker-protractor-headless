@@ -3,7 +3,7 @@ MAINTAINER j.ciolek@webnicer.com
 WORKDIR /tmp
 COPY webdriver-versions.js ./
 ENV CHROME_PACKAGE="google-chrome-stable_67.0.3396.99-1_amd64.deb" NODE_PATH=/usr/local/lib/node_modules:/protractor/node_modules
-RUN npm install -g protractor@5.3.1 && \
+RUN npm install -g protractor@5.4.0 && \
     webdriver-manager update && \
     echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list && \
     apt-get update && \
